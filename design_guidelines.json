@@ -1,0 +1,131 @@
+{
+  "project_name": "ReCell",
+  "domain": "Premium Device Trade-In & Accelerated Resale Platform",
+  "theme": "LIGHT",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) + Luxury Polish",
+  "design_philosophy": "High-end electronics flagship store (Apple-grade) merged with a trustworthy financial platform. Professional, clean, minimal, generous white space, and optical alignment. NO generic flat components. Every component should feel tactile, crisp, and high-quality.",
+  "colors": {
+    "primary": {
+      "hex": "#0066CC",
+      "name": "Electric Blue",
+      "usage": "Primary CTAs, Progress Bars, Trust Badges, Interactive Highlights"
+    },
+    "background": {
+      "hex": "#FFFFFF",
+      "name": "Pure White",
+      "usage": "Main page background, Hero section, Premium product displays"
+    },
+    "surface": {
+      "hex": "#F5F5F7",
+      "name": "Silver Off-White",
+      "usage": "Secondary panels, Feature Cards, Form Backgrounds (Apple-style surface)"
+    },
+    "text": {
+      "primary": "#1D1D1F",
+      "secondary": "#86868B",
+      "inverse": "#FFFFFF",
+      "accent": "#0066CC"
+    },
+    "border": "#E5E5EA",
+    "status": {
+      "success": "#34C759",
+      "warning": "#FF9500",
+      "error": "#FF3B30"
+    }
+  },
+  "typography": {
+    "heading_font": "Outfit, sans-serif",
+    "body_font": "Manrope, sans-serif",
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tighter leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight",
+      "h3": "text-xl sm:text-2xl font-medium",
+      "body_lg": "text-lg leading-relaxed",
+      "body": "text-base leading-relaxed text-[#86868B]",
+      "caption": "text-xs tracking-wide uppercase font-semibold text-[#86868B]"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing (p-8 to p-12), Optical Alignment over mathematical, Content must breathe. Use Bento Grids for feature showcases.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8",
+    "border_radius": "rounded-2xl lg:rounded-3xl",
+    "surface_styles": {
+      "card_default": "bg-[#F5F5F7] rounded-3xl p-8 border border-white/50 shadow-sm",
+      "glass_header": "bg-white/70 backdrop-blur-xl border-b border-[#E5E5EA]/50 sticky top-0 z-50",
+      "elevated_modal": "bg-white rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.08)] border border-[#E5E5EA]"
+    }
+  },
+  "components": {
+    "brand_selector_grid": {
+      "style": "Clean bento-style grid. Cards with hover lift (-translate-y-1) and subtle shadow. Centered brand icon.",
+      "icons": "Use react-icons/si and react-icons/fa: FaApple, SiSamsung, SiSony, SiOneplus, SiXiaomi",
+      "test_id": "data-testid='brand-selector-grid'"
+    },
+    "price_estimator_card": {
+      "style": "High-contrast focal point. Large animated numbers (react-spring or framer-motion). Deep Graphite background with Pure White text, accented by Electric Blue.",
+      "test_id": "data-testid='price-estimator-card'"
+    },
+    "device_questionnaire": {
+      "style": "Progressive disclosure. Step indicator (1/4). Large touch-friendly selection cards. Subtle transitions between steps.",
+      "test_id": "data-testid='device-condition-form'"
+    },
+    "seller_dashboard": {
+      "style": "Control-room grid. Clean metrics, 21-day countdown timer styled as a circular or crisp linear progress bar. Clear visibility of margins and statuses.",
+      "test_id": "data-testid='seller-dashboard-overview'"
+    },
+    "buy_storefront": {
+      "style": "Minimalist product grid. Focus purely on device imagery and condition badges. No distracting colorful boxes.",
+      "test_id": "data-testid='buy-storefront-grid'"
+    },
+    "buttons": {
+      "primary": "bg-[#0066CC] hover:bg-[#0055AA] text-white rounded-full px-8 py-4 font-medium transition-colors",
+      "secondary": "bg-[#F5F5F7] hover:bg-[#E5E5EA] text-[#1D1D1F] rounded-full px-8 py-4 font-medium transition-colors"
+    }
+  },
+  "motion": {
+    "default_transition": "transition-all duration-300 ease-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg transition-transform duration-300",
+    "page_enter": "framer-motion: initial opacity-0 translate-y-4, animate opacity-100 translate-y-0, duration 0.5s",
+    "stagger_list": "staggerChildren: 0.1"
+  },
+  "media": {
+    "hero_image": {
+      "url": "https://images.pexels.com/photos/34018284/pexels-photo-34018284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "High-end smartphone close-up, premium feel",
+      "usage": "Hero background or prominent side image"
+    },
+    "product_images": [
+      {
+        "url": "https://images.unsplash.com/photo-1736173155811-e8142fd553ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxpcGhvbmUlMjAxNSUyMHByb3xlbnwwfHx8fDE3ODE0MjQwMDB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "White iPhone sitting on table",
+        "usage": "PDP / Storefront demo"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHxzYW1zdW5nJTIwZ2FsYXh5JTIwc21hcnRwaG9uZXxlbnwwfHx8fDE3ODE0MjQwMDB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Sony remote/device aesthetic",
+        "usage": "Storefront generic image"
+      },
+      {
+        "url": "https://images.pexels.com/photos/29020349/pexels-photo-29020349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Modern smartphone on wooden table",
+        "usage": "How it works / sell flow visualization"
+      }
+    ],
+    "store_environment": {
+      "url": "https://images.unsplash.com/photo-1760774999553-2eb0292ae82d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHxwcmVtaXVtJTIwbW9kZXJuJTIwZWxlY3Ryb25pY3MlMjBzdG9yZXxlbnwwfHx8fDE3ODE0MjQwMDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern storefront",
+      "usage": "Store locator and Pickup checkout sections"
+    }
+  },
+  "instructions_to_main_agent": {
+    "dependencies": "yarn add react-icons framer-motion @radix-ui/react-icons",
+    "strict_rules": [
+      "NO default Inter for headings. Use Outfit for headings and Manrope for body text via Google Fonts.",
+      "Adhere strictly to the color palette. No arbitrary shadows; use the defined surface_styles.",
+      "Images MUST be sourced exclusively from the media object provided here. DO NOT use placeholders.",
+      "The layout must prioritize spaciousness (p-8 to p-12 padding) to evoke a premium Apple-store feeling.",
+      "All major interactive elements must include data-testid as specified."
+    ]
+  }
+}
