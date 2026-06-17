@@ -117,14 +117,18 @@ export const QUESTIONNAIRE_STEPS = [
 
 // Buy marketplace (Kochi pickup)
 export const MARKETPLACE = [
-  { id: "m1", model: "iPhone 14 Pro", brand: "Apple", variant: "256 GB · 8 GB", price: 64999, mrp: 119900, image: IPHONE_IMG, grade: "Superb", store: "MG Road, Kochi", color: "Deep Purple" },
-  { id: "m2", model: "Galaxy S23 Ultra", brand: "Samsung", variant: "512 GB · 12 GB", price: 71499, mrp: 124999, image: SAMSUNG_IMG, grade: "Like New", store: "Edappally, Kochi", color: "Phantom Black" },
-  { id: "m3", model: "iPhone 13", brand: "Apple", variant: "128 GB · 6 GB", price: 39299, mrp: 69900, image: IPHONE_IMG, grade: "Good", store: "Kakkanad, Kochi", color: "Midnight" },
-  { id: "m4", model: "OnePlus 11", brand: "OnePlus", variant: "256 GB · 16 GB", price: 38800, mrp: 61999, image: PHONE_TABLE, grade: "Superb", store: "Vyttila, Kochi", color: "Titan Black" },
-  { id: "m5", model: "Pixel 8 Pro", brand: "Google", variant: "128 GB · 12 GB", price: 56400, mrp: 106999, image: PHONE_TABLE, grade: "Like New", store: "Panampilly Nagar, Kochi", color: "Obsidian" },
-  { id: "m6", model: "iPhone 12", brand: "Apple", variant: "128 GB · 4 GB", price: 32499, mrp: 65900, image: IPHONE_IMG, grade: "Good", store: "Fort Kochi", color: "Blue" },
-  { id: "m7", model: "Galaxy Z Flip5", brand: "Samsung", variant: "256 GB · 8 GB", price: 58999, mrp: 99999, image: SAMSUNG_IMG, grade: "Superb", store: "MG Road, Kochi", color: "Mint" },
-  { id: "m8", model: "Xiaomi 13 Pro", brand: "Xiaomi", variant: "256 GB · 12 GB", price: 41200, mrp: 79999, image: PHONE_TABLE, grade: "Superb", store: "Edappally, Kochi", color: "Ceramic White" },
+  { id: "m1", model: "iPhone 14 Pro", brand: "Apple", storage: "256 GB", ram: "8 GB", variant: "256 GB · 8 GB", price: 64999, mrp: 119900, image: IPHONE_IMG, grade: "Superb", store: "MG Road, Kochi", color: "Deep Purple", warranty: "6 months", rating: 4.7 },
+  { id: "m2", model: "Galaxy S23 Ultra", brand: "Samsung", storage: "512 GB", ram: "12 GB", variant: "512 GB · 12 GB", price: 71499, mrp: 124999, image: SAMSUNG_IMG, grade: "Like New", store: "Edappally, Kochi", color: "Phantom Black", warranty: "6 months", rating: 4.9 },
+  { id: "m3", model: "iPhone 13", brand: "Apple", storage: "128 GB", ram: "6 GB", variant: "128 GB · 6 GB", price: 39299, mrp: 69900, image: IPHONE_IMG, grade: "Good", store: "Kakkanad, Kochi", color: "Midnight", warranty: "3 months", rating: 4.4 },
+  { id: "m4", model: "OnePlus 11", brand: "OnePlus", storage: "256 GB", ram: "16 GB", variant: "256 GB · 16 GB", price: 38800, mrp: 61999, image: PHONE_TABLE, grade: "Superb", store: "Vyttila, Kochi", color: "Titan Black", warranty: "6 months", rating: 4.6 },
+  { id: "m5", model: "Pixel 8 Pro", brand: "Google", storage: "128 GB", ram: "12 GB", variant: "128 GB · 12 GB", price: 56400, mrp: 106999, image: PHONE_TABLE, grade: "Like New", store: "Panampilly Nagar, Kochi", color: "Obsidian", warranty: "6 months", rating: 4.8 },
+  { id: "m6", model: "iPhone 12", brand: "Apple", storage: "128 GB", ram: "4 GB", variant: "128 GB · 4 GB", price: 32499, mrp: 65900, image: IPHONE_IMG, grade: "Good", store: "Fort Kochi", color: "Blue", warranty: "3 months", rating: 4.3 },
+  { id: "m7", model: "Galaxy Z Flip5", brand: "Samsung", storage: "256 GB", ram: "8 GB", variant: "256 GB · 8 GB", price: 58999, mrp: 99999, image: SAMSUNG_IMG, grade: "Superb", store: "MG Road, Kochi", color: "Mint", warranty: "6 months", rating: 4.5 },
+  { id: "m8", model: "Xiaomi 13 Pro", brand: "Xiaomi", storage: "256 GB", ram: "12 GB", variant: "256 GB · 12 GB", price: 41200, mrp: 79999, image: PHONE_TABLE, grade: "Superb", store: "Edappally, Kochi", color: "Ceramic White", warranty: "6 months", rating: 4.5 },
+  { id: "m9", model: "iPhone 15 Pro", brand: "Apple", storage: "512 GB", ram: "8 GB", variant: "512 GB · 8 GB", price: 99999, mrp: 159900, image: IPHONE_IMG, grade: "Like New", store: "MG Road, Kochi", color: "Natural Titanium", warranty: "12 months", rating: 4.9 },
+  { id: "m10", model: "Galaxy S22", brand: "Samsung", storage: "128 GB", ram: "8 GB", variant: "128 GB · 8 GB", price: 29800, mrp: 72999, image: SAMSUNG_IMG, grade: "Good", store: "Kakkanad, Kochi", color: "Phantom White", warranty: "3 months", rating: 4.2 },
+  { id: "m11", model: "OnePlus Nord 3", brand: "OnePlus", storage: "128 GB", ram: "8 GB", variant: "128 GB · 8 GB", price: 19999, mrp: 33999, image: PHONE_TABLE, grade: "Superb", store: "Vyttila, Kochi", color: "Misty Green", warranty: "6 months", rating: 4.4 },
+  { id: "m12", model: "Pixel 7", brand: "Google", storage: "256 GB", ram: "8 GB", variant: "256 GB · 8 GB", price: 33500, mrp: 69999, image: PHONE_TABLE, grade: "Good", store: "Panampilly Nagar, Kochi", color: "Snow", warranty: "3 months", rating: 4.3 },
 ];
 
 // Seller dashboard mocks
