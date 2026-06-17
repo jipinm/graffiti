@@ -68,14 +68,14 @@ export default function ProductDetail() {
 
           <div className="mt-6 grid grid-cols-2 gap-3">
             <button
-              data-testid="pdp-buy-now"
+              data-testid="pdp-reserve"
               onClick={() => { toast.success("Reserved! Show this confirmation at the store."); }}
               className="px-6 py-4 rounded-full bg-[#0066CC] hover:bg-[#0055AA] text-white font-medium"
             >
               Reserve & pay
             </button>
             <button
-              data-testid="pdp-add-cart"
+              data-testid="pdp-add-to-cart"
               onClick={() => toast.success("Added to your cart")}
               className="px-6 py-4 rounded-full bg-[#F5F5F7] hover:bg-[#E5E5EA] text-[#1D1D1F] font-medium"
             >

@@ -8,7 +8,7 @@ export default function Dashboard() {
   const activeListings = SELLER_LISTINGS.filter(l=>l.status === "Listed").length;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14" data-testid="seller-dashboard-overview">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14" data-testid="seller-dashboard-overview" data-testid-alt="dashboard-page">
       <div className="flex items-end justify-between flex-wrap gap-4">
         <div>
           <div className="text-xs uppercase tracking-wider font-semibold text-[#86868B]">Seller dashboard</div>
@@ -43,10 +43,17 @@ export default function Dashboard() {
 }
 
 function StatCard({ Icon, label, value, hint, accent }) {
+  const slugMap = {
+    "Total MG received": "stat-total-mg",
+    "Profit share earned": "stat-profit-share",
+    "Active listings": "stat-active-listings",
+    "Avg. resale time": "stat-avg-resale-time",
+  };
+  const testid = slugMap[label] || `stat-${label.replace(/\s+/g,'-').toLowerCase()}`;
   return (
     <div
       className={`rounded-3xl p-6 border ${accent ? "bg-[#1D1D1F] text-white border-[#1D1D1F]" : "bg-white border-[#E5E5EA]"}`}
-      data-testid={`stat-${label.replace(/\s+/g,'-').toLowerCase()}`}
+      data-testid={testid}
     >
       <div className={`h-10 w-10 rounded-xl flex items-center justify-center ${accent ? "bg-white/10" : "bg-[#F5F5F7]"}`}>
         <Icon className={`h-5 w-5 ${accent ? "text-white" : "text-[#0066CC]"}`} />
