@@ -95,7 +95,7 @@ export default function Buy() {
             Certified pre-owned phones
           </h1>
           <p className="mt-2 text-[#86868B] max-w-xl">
-            Every device passes a 64-point inspection. 1-day return at store · Prepaid only · Pickup at any GRAFFITI Kochi store.
+            Every phone passes a 64-point inspection. 1-day return at store · Prepaid only · Pickup at any GRAFFITI Kochi store.
           </p>
         </div>
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#F5F5F7] border border-[#E5E5EA] w-full sm:w-80">
@@ -131,7 +131,7 @@ export default function Buy() {
                 Filters {activeCount > 0 && <span className="ml-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-[#1D1D1F] text-[10px] font-bold">{activeCount}</span>}
               </button>
               <span className="text-sm text-[#86868B]" data-testid="buy-result-count">
-                {filtered.length} {filtered.length === 1 ? "device" : "devices"}
+                {filtered.length} {filtered.length === 1 ? "phone" : "phones"}
               </span>
             </div>
             <div className="flex items-center gap-2 ml-auto">
@@ -209,7 +209,7 @@ export default function Buy() {
 
           {filtered.length === 0 && (
             <div className="text-center py-20" data-testid="buy-empty">
-              <div className="text-sm text-[#86868B]">No devices match your filters.</div>
+              <div className="text-sm text-[#86868B]">No phones match your filters.</div>
               <button onClick={clearAll} className="mt-3 px-5 py-2 rounded-full bg-[#0066CC] text-white text-sm font-medium">
                 Clear filters
               </button>

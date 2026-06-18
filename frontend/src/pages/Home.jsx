@@ -35,7 +35,7 @@ export default function Home() {
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link to="/sell" data-testid="hero-cta-sell"
                   className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#0066CC] text-white font-medium hover:bg-[#0055AA] transition-colors group">
-                  Sell your device <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  Sell your Mobile Phone <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </Link>
                 <Link to="/buy" data-testid="hero-cta-buy"
                   className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#F5F5F7] hover:bg-[#E5E5EA] text-[#1D1D1F] font-medium transition-colors">
@@ -57,7 +57,7 @@ export default function Home() {
 
             <div className="lg:col-span-5 recell-scale-in">
               <div className="relative rounded-3xl overflow-hidden bg-[#F5F5F7] aspect-[4/5]">
-                <img src={HERO_IMG} alt="Premium device" className="w-full h-full object-cover" />
+                <img src={HERO_IMG} alt="Premium mobile phone" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur text-[10px] uppercase tracking-wider text-white font-semibold">
                   Today's top quote
                 </div>
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-4 lg:gap-6" data-testid="dual-entry">
           <Link to="/sell" className="recell-card-hover group block bg-[#1D1D1F] text-white rounded-3xl p-8 lg:p-10 relative overflow-hidden" data-testid="entry-sell">
             <div className="text-xs uppercase tracking-wider font-semibold text-white/50">For sellers</div>
-            <h3 className="mt-3 text-3xl lg:text-4xl font-semibold tracking-tighter" style={{fontFamily:"Outfit"}}>Sell your device</h3>
+            <h3 className="mt-3 text-3xl lg:text-4xl font-semibold tracking-tighter" style={{fontFamily:"Outfit"}}>Sell your Mobile Phone</h3>
             <ul className="mt-5 space-y-2 text-sm text-white/80">
               <li className="flex items-center gap-2"><Check className="h-4 w-4 text-[#0066CC]" /> Instant valuation in 60 seconds</li>
               <li className="flex items-center gap-2"><Check className="h-4 w-4 text-[#0066CC]" /> MG paid the same business day</li>
@@ -98,7 +98,7 @@ export default function Home() {
 
           <Link to="/buy" className="recell-card-hover group block bg-[#F5F5F7] rounded-3xl p-8 lg:p-10 relative overflow-hidden" data-testid="entry-buy">
             <div className="text-xs uppercase tracking-wider font-semibold text-[#86868B]">For buyers</div>
-            <h3 className="mt-3 text-3xl lg:text-4xl font-semibold tracking-tighter" style={{fontFamily:"Outfit"}}>Buy certified devices</h3>
+            <h3 className="mt-3 text-3xl lg:text-4xl font-semibold tracking-tighter" style={{fontFamily:"Outfit"}}>Buy certified mobile phones</h3>
             <ul className="mt-5 space-y-2 text-sm text-[#1D1D1F]">
               <li className="flex items-center gap-2"><Check className="h-4 w-4 text-[#0066CC]" /> Verified premium phones & laptops</li>
               <li className="flex items-center gap-2"><Check className="h-4 w-4 text-[#0066CC]" /> 64-point quality inspection</li>
@@ -158,7 +158,7 @@ export default function Home() {
                 How <span className="text-[#0066CC]">GRAFFITI</span> works
               </h2>
               <p className="mt-4 text-[#86868B] max-w-xl">
-                Seven simple steps from the day you submit your device to the day your bonus hits your account. Transparent at every stage.
+                Seven simple steps from the day you submit your phone to the day your bonus hits your account. Transparent at every stage.
               </p>
             </div>
             <div className="lg:col-span-5 flex lg:justify-end">
@@ -226,9 +226,9 @@ export default function Home() {
             title="Why buy from GRAFFITI?"
             color="light"
             items={[
-              { icon: ShieldCheck, t: "Certified devices", d: "Cleared on IMEI, carrier and police databases." },
+              { icon: ShieldCheck, t: "Certified mobile phones", d: "Cleared on IMEI, carrier and police databases." },
               { icon: Check, t: "Verified original components", d: "OEM screen, battery and camera modules only." },
-              { icon: Star, t: "Quality assurance", d: "Every device passes a 64-point inspection." },
+              { icon: Star, t: "Quality assurance", d: "Every phone passes a 64-point inspection." },
               { icon: Banknote, t: "Competitive pricing", d: "Below market — without the sketchy resellers." },
               { icon: Clock4, t: "1-day return policy", d: "Walk in, walk out — peace of mind included." },
             ]}
@@ -373,7 +373,7 @@ export default function Home() {
               6 flagship stores. Pick up the same day.
             </h2>
             <p className="mt-4 text-[#86868B] leading-relaxed max-w-md">
-              MG Road, Edappally, Kakkanad, Vyttila, Panampilly Nagar, Fort Kochi — every device is inspected, cleaned and packed on-site.
+              MG Road, Edappally, Kakkanad, Vyttila, Panampilly Nagar, Fort Kochi — every phone is inspected, cleaned and packed on-site.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link to="/stores" data-testid="store-callout-cta"

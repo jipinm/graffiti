@@ -4,7 +4,7 @@ import { Search, Check, Truck, Cpu, Package, Banknote, ArrowRight, MapPin } from
 import { SELLER_LISTINGS } from "@/lib/mockData";
 
 const TIMELINE = [
-  { id: "submitted", title: "Device submitted", t: "12 Feb 2026, 10:24 AM", Icon: Check, done: true },
+  { id: "submitted", title: "Phone submitted", t: "12 Feb 2026, 10:24 AM", Icon: Check, done: true },
   { id: "inspection", title: "Primary inspection complete", t: "12 Feb 2026, 11:05 AM", Icon: Cpu, done: true },
   { id: "mg-paid", title: "Minimum Guarantee paid", t: "12 Feb 2026, 12:40 PM", Icon: Banknote, done: true },
   { id: "listed", title: "Listed on marketplace", t: "13 Feb 2026, 09:00 AM", Icon: Package, done: true },
@@ -24,9 +24,9 @@ export default function TrackDevice() {
   return (
     <div data-testid="track-page">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-10 lg:pt-16">
-        <div className="text-xs uppercase tracking-wider font-semibold text-[#86868B]">Track My Device</div>
+        <div className="text-xs uppercase tracking-wider font-semibold text-[#86868B]">Track My Phone</div>
         <h1 className="mt-2 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tighter max-w-3xl" style={{fontFamily:"Outfit"}}>
-          Where's my device, right now?
+          Where's my phone, right now?
         </h1>
         <p className="mt-4 text-[#86868B] max-w-2xl">
           Enter your listing ID (e.g. G-204A) or registered mobile number to see live status, current bid, and bonus projection.

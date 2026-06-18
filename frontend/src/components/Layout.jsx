@@ -5,8 +5,8 @@ import { BRAND_NAME, BRAND_CITY } from "@/lib/mockData";
 
 const PRIMARY_NAV = [
   { to: "/", label: "Home", end: true },
-  { to: "/sell", label: "Sell Device" },
-  { to: "/buy", label: "Buy Devices" },
+  { to: "/sell", label: "Sell Mobile Phone" },
+  { to: "/buy", label: "Buy Mobile Phones" },
   { to: "/how-it-works", label: "How It Works" },
   { to: "/why-graffiti", label: "Why GRAFFITI" },
   { to: "/stores", label: "Stores" },
@@ -15,7 +15,7 @@ const PRIMARY_NAV = [
 ];
 
 const UTILITY_NAV = [
-  { to: "/track", label: "Track My Device" },
+  { to: "/track", label: "Track My Phone" },
   { to: "/account", label: "My Account" },
 ];
 
@@ -45,7 +45,7 @@ export default function Layout() {
             <MapPin className="h-3.5 w-3.5" /> {BRAND_CITY} · 6 flagship stores
           </div>
           <div className="flex items-center gap-5 text-white/70">
-            <Link to="/track" className="hover:text-white transition-colors">Track my device</Link>
+            <Link to="/track" className="hover:text-white transition-colors">Track my phone</Link>
             <Link to="/account" className="hover:text-white transition-colors">My Account</Link>
             <a href="tel:+914841100100" className="hover:text-white transition-colors">+91 484 4 100 100</a>
           </div>
@@ -196,7 +196,7 @@ export default function Layout() {
                 <span className="text-xl font-bold" style={{fontFamily:"Outfit"}}>{BRAND_NAME}</span>
               </div>
               <p className="text-sm text-white/60 max-w-xs leading-relaxed">
-                Premium device trade-in with an instant Minimum Guarantee. Sell smart, buy certified — picked up from your nearest GRAFFITI store in Kochi.
+                Premium mobile phone trade-in with an instant Minimum Guarantee. Sell smart, buy certified — picked up from your nearest GRAFFITI store in Kochi.
               </p>
               <div className="mt-6 flex items-center gap-2 text-xs text-white/40">
                 <MapPin className="h-3.5 w-3.5" /> {BRAND_CITY}
@@ -204,9 +204,9 @@ export default function Layout() {
             </div>
 
             <FooterCol title="Platform" links={[
-              { to: "/sell", label: "Sell a Device" },
+              { to: "/sell", label: "Sell a Mobile Phone" },
               { to: "/buy", label: "Buy Certified" },
-              { to: "/track", label: "Track My Device" },
+              { to: "/track", label: "Track My Phone" },
               { to: "/account", label: "Seller Dashboard" },
             ]} />
             <FooterCol title="Company" links={[

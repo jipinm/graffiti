@@ -73,7 +73,7 @@ export default function Sell() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14" data-testid="sell-page">
       <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
         <div>
-          <div className="text-xs uppercase tracking-wider font-semibold text-[#86868B]">Sell your device</div>
+          <div className="text-xs uppercase tracking-wider font-semibold text-[#86868B]">Sell your Mobile Phone</div>
           <h1 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tighter" style={{fontFamily:"Outfit"}}>
             Get an instant quote
           </h1>
@@ -141,7 +141,7 @@ export default function Sell() {
                 </div>
                 <div className="text-sm text-white/60 mt-2">Starting from {formatINR(estimateRange[0])}</div>
                 <p className="mt-6 text-sm text-white/70 leading-relaxed">
-                  {"Want a precise quote? Tell us a bit about the device\u2019s condition next."}
+                  {"Want a precise quote? Tell us a bit about the phone\u2019s condition next."}
                 </p>
                 <button
                   data-testid="sell-get-exact-value"

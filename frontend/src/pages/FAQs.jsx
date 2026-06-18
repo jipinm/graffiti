@@ -16,7 +16,7 @@ export default function FAQs() {
           Questions answered honestly.
         </h1>
         <p className="mt-4 text-[#86868B] max-w-2xl">
-          Everything you might want to know about Minimum Guarantee, the 21-day window, and how we keep your data and devices safe.
+          Everything you might want to know about Minimum Guarantee, the 21-day window, and how we keep your data and phone safe.
         </p>
 
         <div className="mt-8 max-w-xl flex items-center gap-2 px-4 py-3 rounded-full bg-[#F5F5F7] border border-[#E5E5EA]">

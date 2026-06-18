@@ -22,7 +22,7 @@ describe("Layout", () => {
         <Layout />
       </MemoryRouter>
     );
-    ["Home", "Sell Device", "Buy Devices", "How It Works", "Why GRAFFITI", "Stores", "FAQs", "Contact"].forEach(
+    ["Home", "Sell Mobile Phone", "Buy Mobile Phones", "How It Works", "Why GRAFFITI", "Stores", "FAQs", "Contact"].forEach(
       (label) => {
         expect(screen.getAllByText(label).length).toBeGreaterThan(0);
       }

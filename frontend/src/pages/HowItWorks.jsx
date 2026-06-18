@@ -13,7 +13,7 @@ export default function HowItWorks() {
           The GRAFFITI process, end-to-end.
         </h1>
         <p className="mt-5 text-lg text-[#86868B] max-w-2xl leading-relaxed">
-          We pay you upfront, list your device for 21 days, and share the bonus when it sells. Seven steps. Zero ambiguity.
+          We pay you upfront, list your phone for 21 days, and share the bonus when it sells. Seven steps. Zero ambiguity.
         </p>
       </section>
 

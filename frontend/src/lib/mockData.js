@@ -60,10 +60,10 @@ export const QUESTIONNAIRE_STEPS = [
   {
     id: "functionality",
     title: "Basic Functionality",
-    subtitle: "Tell us how your device performs the basics.",
+    subtitle: "Tell us how your phone performs the basics.",
     type: "yesno",
     questions: [
-      { id: "calls", label: "Can your device make & receive calls clearly?", icon: "Phone", impact: 0 },
+      { id: "calls", label: "Can your phone make & receive calls clearly?", icon: "Phone", impact: 0 },
       { id: "touchscreen", label: "Is the touchscreen fully responsive?", icon: "Hand", impact: 0 },
       { id: "originalScreen", label: "Is the screen original (never replaced by a local shop)?", icon: "Monitor", impact: 0 },
     ],
@@ -71,13 +71,13 @@ export const QUESTIONNAIRE_STEPS = [
   {
     id: "screen-body",
     title: "Screen & Body Condition",
-    subtitle: "Inspect your device's physical state.",
+    subtitle: "Inspect your phone's physical state.",
     type: "yesno",
     questions: [
       { id: "screenBreak", label: "Any breaks or scratches on the screen?", icon: "AlertTriangle", impact: 1800, invert: true },
       { id: "deadSpot", label: "Dead spots, lines, or discoloration on the display?", icon: "Layers", impact: 1200, invert: true },
       { id: "bodyDent", label: "Scratches or dents on the body?", icon: "Scissors", impact: 900, invert: true },
-      { id: "panelMissing", label: "Any device panel missing or broken?", icon: "AlertOctagon", impact: 1500, invert: true },
+      { id: "panelMissing", label: "Any phone panel missing or broken?", icon: "AlertOctagon", impact: 1500, invert: true },
     ],
   },
   {
@@ -150,13 +150,13 @@ export const STORES = [
 
 // FAQs about the MG model
 export const FAQS = [
-  { q: "What is the Minimum Guarantee (MG)?", a: "MG is a fair upfront price we pay you the day you walk in. It's based on your device's exact configuration and condition after a 15-minute inspection at any GRAFFITI store." },
-  { q: "How is the bonus / profit share calculated?", a: "If your device sells above MG within the 21-day window, your bonus = Selling Price − MG − Platform Fee. The bonus is transferred to your bank account after the buyer's return period ends." },
-  { q: "What happens if my device doesn't sell in 21 days?", a: "You keep the full MG. Ownership of the device transfers to GRAFFITI and no further action is needed from you. We then liquidate it through our B2B network." },
-  { q: "Which devices does GRAFFITI accept?", a: "Premium smartphones from Apple, Samsung, OnePlus, Google, Xiaomi and Sony — and select laptops. Devices must be functional, like-new in appearance, and have original screen and battery." },
-  { q: "How is my personal data wiped from the device?", a: "Our technicians factory-reset every device and run a certified data-erasure tool that overwrites all storage blocks. You can also de-link your Apple/Google account at the store with us." },
-  { q: "How long does the MG payout take?", a: "After your device clears primary inspection (about 15 minutes), the MG is transferred to your bank account the same business day via UPI or NEFT." },
-  { q: "Are GRAFFITI's certified buy-side phones safe?", a: "Every certified device passes a 64-point inspection, has its IMEI cleared against carrier and police databases, and ships with a 1-day in-store return policy." },
+  { q: "What is the Minimum Guarantee (MG)?", a: "MG is a fair upfront price we pay you the day you walk in. It's based on your phone's exact configuration and condition after a 15-minute inspection at any GRAFFITI store." },
+  { q: "How is the bonus / profit share calculated?", a: "If your phone sells above MG within the 21-day window, your bonus = Selling Price − MG − Platform Fee. The bonus is transferred to your bank account after the buyer's return period ends." },
+  { q: "What happens if my phone doesn't sell in 21 days?", a: "You keep the full MG. Ownership of the phone transfers to GRAFFITI and no further action is needed from you. We then liquidate it through our B2B network." },
+  { q: "Which mobile phones does GRAFFITI accept?", a: "Premium mobile phones from Apple, Samsung, OnePlus, Google, Xiaomi and Sony. Phones must be functional, like-new in appearance, and have original screen and battery." },
+  { q: "How is my personal data wiped from the phone?", a: "Our technicians factory-reset every phone and run a certified data-erasure tool that overwrites all storage blocks. You can also de-link your Apple/Google account at the store with us." },
+  { q: "How long does the MG payout take?", a: "After your phone clears primary inspection (about 15 minutes), the MG is transferred to your bank account the same business day via UPI or NEFT." },
+  { q: "Are GRAFFITI's certified buy-side phones safe?", a: "Every certified phone passes a 64-point inspection, has its IMEI cleared against carrier and police databases, and ships with a 1-day in-store return policy." },
   { q: "Do you support delivery for the Buy section?", a: "Currently, buyers pick up in-store at any of our 6 Kochi locations. Doorstep delivery across Kerala is rolling out in Q3 2026." },
   { q: "Is COD available?", a: "All buy-side transactions are prepaid (UPI / card / netbanking). COD is not available right now to keep prices low and inspections airtight." },
 ];
@@ -170,20 +170,20 @@ export const TESTIMONIALS = [
 
 // Platform stats (for animated counters)
 export const PLATFORM_STATS = [
-  { id: "devices", value: 18420, label: "Devices traded", suffix: "+" },
+  { id: "devices", value: 18420, label: "Phones traded", suffix: "+" },
   { id: "payouts", value: 9.2, label: "Crore paid out", prefix: "₹", suffix: "Cr+" },
   { id: "stores", value: 6, label: "Kochi stores" },
   { id: "rating", value: 4.9, label: "Avg. seller rating", suffix: "/5" },
 ];
 
 export const HOW_IT_WORKS = [
-  { n: "01", title: "Get an instant valuation", body: "Pick your device, answer a few quick questions, and receive a transparent estimated range within a minute.", icon: "Sparkles" },
+  { n: "01", title: "Get an instant valuation", body: "Pick your phone, answer a few quick questions, and receive a transparent estimated range within a minute.", icon: "Sparkles" },
   { n: "02", title: "Expert inspection", body: "Visit a GRAFFITI store or send it through our courier. A certified technician completes a 15-minute verification.", icon: "ShieldCheck" },
   { n: "03", title: "Receive your MG", body: "Once approved, your guaranteed Minimum Guarantee lands in your bank account the same business day.", icon: "Banknote" },
-  { n: "04", title: "Listed for 21 days", body: "We list your device on the GRAFFITI marketplace for 21 days at a market-optimised price.", icon: "Calendar" },
-  { n: "05", title: "Track your device", body: "Watch the listing status, current price, days remaining and your potential profit share — all from your dashboard.", icon: "LineChart" },
+  { n: "04", title: "Listed for 21 days", body: "We list your phone on the GRAFFITI marketplace for 21 days at a market-optimised price.", icon: "Calendar" },
+  { n: "05", title: "Track your phone", body: "Watch the listing status, current price, days remaining and your potential profit share — all from your dashboard.", icon: "LineChart" },
   { n: "06", title: "Earn more when it sells", body: "Bonus = Selling Price − MG − Platform Fee. Paid after the buyer's return window closes.", icon: "TrendingUp" },
-  { n: "07", title: "If unsold, you keep the MG", body: "After 21 days the device transfers to us. You keep the MG. No effort, no awkward returns.", icon: "Check" },
+  { n: "07", title: "If unsold, you keep the MG", body: "After 21 days the phone transfers to us. You keep the MG. No effort, no awkward returns.", icon: "Check" },
 ];
 
 export const HERO_IMG = "https://images.pexels.com/photos/34018284/pexels-photo-34018284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";

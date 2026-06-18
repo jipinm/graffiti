@@ -9,7 +9,7 @@ export default function WhyGraffiti() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 lg:pt-16">
         <div className="text-xs uppercase tracking-wider font-semibold text-[#86868B]">Why GRAFFITI</div>
         <h1 className="mt-2 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tighter max-w-3xl" style={{fontFamily:"Outfit"}}>
-          The honest way to <span className="text-[#0066CC]">trade premium devices.</span>
+          The honest way to <span className="text-[#0066CC]">trade premium mobile phones.</span>
         </h1>
         <p className="mt-5 text-lg text-[#86868B] max-w-2xl">
           We built GRAFFITI to remove the friction, suspicion and shady pricing of the second-hand phone market. Here is what makes us different.
@@ -39,9 +39,9 @@ export default function WhyGraffiti() {
             { Icon: TrendingUp, t: "Profit share on resale", d: "If we sell it for more, you earn more — automatically." },
           ]} />
           <Block title="Why buy from GRAFFITI?" items={[
-            { Icon: ShieldCheck, t: "Certified devices", d: "Cleared on IMEI, carrier and police databases." },
+            { Icon: ShieldCheck, t: "Certified mobile phones", d: "Cleared on IMEI, carrier and police databases." },
             { Icon: Check, t: "Verified original components", d: "OEM screen, battery and camera modules only." },
-            { Icon: Star, t: "Quality assurance", d: "Every device passes a 64-point inspection." },
+            { Icon: Star, t: "Quality assurance", d: "Every phone passes a 64-point inspection." },
             { Icon: Banknote, t: "Competitive pricing", d: "Below market — without the dodgy resellers." },
             { Icon: Clock4, t: "1-day return policy", d: "Walk in, walk out — peace of mind included." },
           ]} />

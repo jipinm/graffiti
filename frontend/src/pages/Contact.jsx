@@ -63,7 +63,7 @@ export default function Contact() {
                 value={form.message} onChange={(e)=>setForm({...form, message: e.target.value})}
                 rows={5}
                 className="mt-2 w-full px-4 py-3 rounded-2xl bg-[#F5F5F7] border border-[#E5E5EA] focus:border-[#0066CC] outline-none text-sm resize-none"
-                placeholder="Tell us about your device or query…"
+                placeholder="Tell us about your phone or query…"
               />
             </div>
             <div className="mt-6 flex items-center justify-between gap-3 flex-wrap">

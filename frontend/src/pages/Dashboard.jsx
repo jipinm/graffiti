@@ -21,7 +21,7 @@ export default function Dashboard() {
         </div>
         <Link to="/sell" data-testid="dashboard-cta-sell"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0066CC] hover:bg-[#0055AA] text-white text-sm font-medium">
-          Sell another device <ArrowUpRight className="h-4 w-4" />
+          Sell another phone <ArrowUpRight className="h-4 w-4" />
         </Link>
       </div>
 
@@ -93,7 +93,7 @@ export default function Dashboard() {
             <h2 className="text-lg font-semibold" style={{fontFamily:"Outfit"}}>What you can do as a buyer</h2>
             <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-                { Icon: ShoppingBag, t: "Browse certified devices" },
+                { Icon: ShoppingBag, t: "Browse certified phones" },
                 { Icon: FileText, t: "View condition reports" },
                 { Icon: Package, t: "Reserve products" },
                 { Icon: Wallet, t: "Manage purchases" },
