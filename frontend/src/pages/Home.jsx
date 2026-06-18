@@ -23,15 +23,15 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-stretch" data-testid="split-hero-grid">
             {/* ============== LEFT — SELL ============== */}
             <div
-              className="relative bg-[#0a0a0b] text-white rounded-3xl p-7 lg:p-10 overflow-hidden recell-fade-up flex flex-col"
+              className="relative bg-[#F8F8FA] text-[#1D1D1F] rounded-3xl p-7 lg:p-10 overflow-hidden recell-fade-up flex flex-col"
               data-testid="hero-sell-panel"
               style={{ animationDelay: "0ms" }}
             >
-              <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#0066CC]/35 blur-3xl" />
-              <div aria-hidden className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-[#0066CC]/20 blur-3xl" />
+              <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#0066CC]/10 blur-3xl" />
+              <div aria-hidden className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-[#0066CC]/08 blur-3xl" />
 
               <div className="relative">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur text-[11px] uppercase tracking-wider font-semibold text-white">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0066CC]/10 text-[11px] uppercase tracking-wider font-semibold text-[#0066CC] border border-[#0066CC]/20">
                   <Zap className="h-3.5 w-3.5 text-[#0066CC]" /> For sellers · Kochi
                 </div>
 
@@ -42,7 +42,7 @@ export default function Home() {
                   Sell your mobile phone <span className="text-[#0066CC]">instantly.</span>
                 </h1>
 
-                <p className="mt-3 text-sm lg:text-base text-white/65 max-w-md leading-relaxed">
+                <p className="mt-3 text-sm lg:text-base text-[#555560] max-w-md leading-relaxed">
                   Walk in. Get a guaranteed minimum price the same day. We list it on the GRAFFITI marketplace and pay you the bonus when it sells.
                 </p>
 
@@ -58,12 +58,12 @@ export default function Home() {
                       className="flex items-start gap-3 recell-fade-up"
                       style={{ animationDelay: `${120 + i * 90}ms` }}
                     >
-                      <div className="h-9 w-9 rounded-xl bg-white/10 ring-1 ring-white/10 flex items-center justify-center shrink-0">
+                      <div className="h-9 w-9 rounded-xl bg-white ring-1 ring-[#E5E5EA] flex items-center justify-center shrink-0">
                         <Icon className="h-4 w-4 text-[#0066CC]" />
                       </div>
                       <div className="min-w-0">
                         <div className="text-sm font-medium leading-snug">{t}</div>
-                        <div className="text-xs text-white/55 mt-0.5">{d}</div>
+                        <div className="text-xs text-[#86868B] mt-0.5">{d}</div>
                       </div>
                     </li>
                   ))}
@@ -76,25 +76,25 @@ export default function Home() {
                   data-testid="hero-cta-sell"
                   className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#0066CC] text-white font-medium hover:bg-[#0055AA] transition-colors"
                 >
-                  Get a free quote
+                  SELL  NOW
                   <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </Link>
                 <Link
                   to="/how-it-works"
                   data-testid="hero-cta-howitworks"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/15 text-white font-medium transition-colors backdrop-blur"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#E5E5EA] hover:bg-[#D8D8DC] text-[#1D1D1F] font-medium transition-colors"
                 >
                   How it works
                 </Link>
               </div>
 
-              <div className="relative mt-7 pt-5 border-t border-white/10 grid grid-cols-4 gap-3">
+              <div className="relative mt-7 pt-5 border-t border-[#E5E5EA] grid grid-cols-4 gap-3">
                 {PLATFORM_STATS.map((s) => (
                   <div key={s.id} data-testid={`hero-stat-${s.id}`}>
                     <div className="text-base lg:text-xl font-semibold tabular-nums" style={{ fontFamily: "Outfit" }}>
                       <CountUp value={s.value} decimals={s.value % 1 ? 1 : 0} prefix={s.prefix} suffix={s.suffix} />
                     </div>
-                    <div className="text-[9px] uppercase tracking-wider text-white/45 mt-0.5">{s.label}</div>
+                    <div className="text-[9px] uppercase tracking-wider text-[#86868B] mt-0.5">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -125,7 +125,7 @@ export default function Home() {
               </div>
 
               <div className="mt-5 grid grid-cols-2 gap-3 lg:gap-4 flex-1" data-testid="hero-buy-grid">
-                {MARKETPLACE.slice(0, 4).map((p, i) => {
+                {MARKETPLACE.slice(0, 2).map((p, i) => {
                   const off = Math.round((1 - p.price / p.mrp) * 100);
                   return (
                     <Link
@@ -135,11 +135,11 @@ export default function Home() {
                       className="group bg-white rounded-2xl p-3 lg:p-4 flex flex-col recell-card-hover recell-fade-up"
                       style={{ animationDelay: `${120 + i * 90}ms` }}
                     >
-                      <div className="relative bg-[#F5F5F7] rounded-xl aspect-[5/4] overflow-hidden flex items-center justify-center">
+                      <div className="relative bg-[#F5F5F7] rounded-xl aspect-[5/4] overflow-hidden">
                         <img
                           src={p.image}
                           alt={p.model}
-                          className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-[1.04]"
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                         />
                         <span className="absolute top-2 left-2 text-[9px] uppercase tracking-wider font-semibold text-[#0066CC] bg-white/95 backdrop-blur px-2 py-0.5 rounded-full border border-[#0066CC]/20">
                           {p.grade}
@@ -171,7 +171,7 @@ export default function Home() {
 
               <div className="mt-5 flex items-center justify-between gap-3 flex-wrap">
                 <div className="text-xs text-[#86868B]">
-                  Showing 4 of {MARKETPLACE.length} certified phones · Kochi pickup
+                  Showing 2 of {MARKETPLACE.length} certified phones · Kochi pickup
                 </div>
                 <Link
                   to="/buy"
@@ -294,7 +294,7 @@ export default function Home() {
               { icon: Clock4, t: "Real-time tracking", d: "Watch the 21-day resale window from your dashboard." },
               { icon: TrendingUp, t: "Profit share on resale", d: "You earn when we earn — automatically." },
             ]}
-            cta={{ to: "/sell", label: "Start a quote" }}
+            cta={{ to: "/sell", label: "Sell Now" }}
           />
           <BenefitCard
             title="Why buy from GRAFFITI?"
@@ -306,7 +306,7 @@ export default function Home() {
               { icon: Banknote, t: "Competitive pricing", d: "Below market — without the sketchy resellers." },
               { icon: Clock4, t: "1-day return policy", d: "Walk in, walk out — peace of mind included." },
             ]}
-            cta={{ to: "/buy", label: "Browse certified" }}
+            cta={{ to: "/buy", label: "Browse Mobile phones" }}
           />
         </div>
 

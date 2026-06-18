@@ -179,8 +179,8 @@ export default function Buy() {
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-5" data-testid="buy-storefront-grid">
             {filtered.map((p) => (
               <Link to={`/buy/${p.id}`} key={p.id} className="recell-card-hover block" data-testid={`buy-card-${p.id}`}>
-                <div className="bg-[#F5F5F7] rounded-3xl p-5 aspect-square flex items-center justify-center overflow-hidden relative">
-                  <img src={p.image} alt={p.model} className="max-h-full max-w-full object-contain rounded-xl" />
+                <div className="bg-[#F5F5F7] rounded-3xl aspect-square overflow-hidden relative">
+                  <img src={p.image} alt={p.model} className="w-full h-full object-cover" />
                   <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wider font-semibold text-[#0066CC] bg-white px-2 py-1 rounded-full border border-[#0066CC]/20">
                     {p.grade}
                   </span>

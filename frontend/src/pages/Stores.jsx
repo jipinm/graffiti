@@ -17,7 +17,7 @@ export default function Stores() {
             </p>
             <div className="mt-6 flex gap-3 flex-wrap">
               <Link to="/sell" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0066CC] hover:bg-[#0055AA] text-white text-sm font-medium" data-testid="stores-cta-sell">
-                Start a quote <ArrowUpRight className="h-4 w-4" />
+                Sell Now <ArrowUpRight className="h-4 w-4" />
               </Link>
               <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#F5F5F7] hover:bg-[#E5E5EA] text-sm font-medium" data-testid="stores-cta-contact">
                 Contact a store

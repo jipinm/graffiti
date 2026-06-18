@@ -54,7 +54,7 @@ export default function HowItWorks() {
             <div className="lg:col-span-4 flex lg:justify-end">
               <Link to="/sell" data-testid="how-cta-sell"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0066CC] hover:bg-[#0055AA] text-sm font-medium">
-                Start a quote <ArrowRight className="h-4 w-4" />
+                Sell Now <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>

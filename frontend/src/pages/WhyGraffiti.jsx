@@ -92,7 +92,7 @@ export default function WhyGraffiti() {
         <div className="mt-12 bg-[#1D1D1F] text-white rounded-3xl p-8 lg:p-12 flex flex-wrap items-center justify-between gap-6">
           <div>
             <h3 className="text-2xl lg:text-3xl font-semibold tracking-tight" style={{fontFamily:"Outfit"}}>Ready to trade with confidence?</h3>
-            <p className="mt-2 text-white/60 text-sm max-w-lg">Get a quote in 60 seconds or browse certified phones at any of our 6 Kochi stores.</p>
+            <p className="mt-2 text-white/60 text-sm max-w-lg">Get a quote in 60 seconds or browse mobile phones at any of our 6 Kochi stores.</p>
           </div>
           <div className="flex gap-3">
             <Link to="/sell" className="px-6 py-3 rounded-full bg-[#0066CC] hover:bg-[#0055AA] text-sm font-medium inline-flex items-center gap-2">Sell now <ArrowRight className="h-4 w-4" /></Link>

@@ -93,7 +93,7 @@ export default function Dashboard() {
             <h2 className="text-lg font-semibold" style={{fontFamily:"Outfit"}}>What you can do as a buyer</h2>
             <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-                { Icon: ShoppingBag, t: "Browse certified phones" },
+                { Icon: ShoppingBag, t: "Browse mobile phones" },
                 { Icon: FileText, t: "View condition reports" },
                 { Icon: Package, t: "Reserve products" },
                 { Icon: Wallet, t: "Manage purchases" },
